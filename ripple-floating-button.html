@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+
+    <style>
+
+<!--
+
+.phone {
+  padding : 0;
+
+  width : 360px;
+  height : 544px;
+  border : 2px solid #ddd;
+  border-radius : 20px;
+  position : relative;
+  overflow : hidden;
+
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+/*
+button.floating {
+
+  width : 64px;
+  height : 64px;
+  border-radius : 50%;
+  border : none;
+  position : absolute;
+  bottom : 20px;
+  right : 20px;
+  background-color : hsl(0, 0%, 60%);
+  cursor : pointer;
+  box-shadow : hsl(0, 0%, 80%) 1px 1px 4px;
+  transition : 300ms background-color, 279ms width, 460ms height, 460ms bottom, 279ms right, 200ms border-radius;
+}
+
+button.floating:hover {
+  background-color: hsl(0, 0%, 80%);
+}
+
+
+button.floating.pressed {
+  background-color : hsl(0, 0%, 70%);
+  border-radius: 0;
+  width : 622px;
+  height : 984px;
+  right: -259px;
+  bottom: -440px;
+  transition : 300ms background-color, 279ms width, 279ms height, 279ms bottom, 279ms right, 200ms border-radius;
+}
+*/
+
+
+button.floating {
+
+  width : 64px;
+  height : 64px;
+  border-radius : 50%;
+  border : none;
+  position : absolute;
+  bottom : 20px;
+  right : 20px;
+  background-color : hsl(0, 0%, 60%);
+  cursor : pointer;
+  box-shadow : hsl(0, 0%, 80%) 1px 1px 4px;
+  transition : 300ms background-color, 300ms 300ms width, 300ms 300ms height, 300ms 300ms bottom, 300ms 300ms right, 200ms border-radius;
+}
+
+button.floating:hover {
+  background-color: hsl(0, 0%, 80%);
+}
+
+
+button.floating.pressed {
+  background-color : hsl(0, 0%, 70%);
+  width : 1204px;
+  height : 1204px;
+  right: -550px;
+  bottom : -550px;
+  cursor : default;
+
+  transition : 300ms background-color, 300ms width, 300ms height, 300ms bottom, 300ms right, 200ms border-radius;
+}
+
+button.floating .inside-button{
+  display : block;
+  position : absolute;
+  opacity : 0;
+  transition : 300ms opacity;
+
+}
+
+
+button.floating.pressed .inside-button {
+  display : block;
+  opacity : 1;
+  top : 400px;
+  left : 400px;
+  transition : 400ms 300ms  opacity;
+
+}
+
+
+
+
+
+-->
+
+    </style>
+  </head>
+  <body>
+
+    <div class="phone">
+
+
+
+
+      <button class="floating" type="button" onclick="var cl = event.currentTarget.classList; cl.contains('pressed') ? cl.remove('pressed') : cl.add('pressed')"> 
+        +
+        <div class="inside-button">
+          What do you want to add?
+          <div class="button-inside-button" onclick="event.cancelBubble = true; alert('kucing')">Another button</div> 
+        </div>
+      
+      </button>
+
+    </div>
+    <div>
+      <p>Mari Berpikir sejenak...</p>
+      <p>Ukurannya adalah : Handphone 360 x 544</p>
+      <p>Ukuran Button adlah 64 x 64 dari kanan dan bawah 20.. berarti buat dari batas atas button ke top adalah 544 - 64 - 20 = 460</p>
+      <p>Ukuran dari batas kir button ke left adalah 360 - 64 - 20 = 279<p>
+      <p>Ukuran akhir karena jalan ke kiri dan ke kanan adalah 279 + 64 + 279<p>
+      <p>right terakhir adalah 20 - 279 = -259</p>
+      <p>ke atas berarti bottomnya jadi 20 - 460 = -440</p>
+      <p>dan heightnya jadi 460*2 + 64 = 
+    </div>
+  </body>
+</html>
