@@ -1,0 +1,121 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../sass/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 12, ../sass/screen.scss */
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #404040;
+}
+
+/* line 18, ../sass/screen.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 20, ../sass/screen.scss */
+h2 {
+  font-size: 1.8em;
+}
+
+/* line 22, ../sass/screen.scss */
+.list {
+  position: relative;
+}
+/* line 28, ../sass/screen.scss */
+.list .list-item {
+  padding: 6px 6px 12px 20px;
+  border-bottom: 1px solid #b3b3b3;
+  cursor: pointer;
+  position: relative;
+  background-color: #f2f2f2;
+  height: 32px;
+  border-bottom: 1px solid #d9d9d9;
+  transition: 300ms height, 300ms background-color;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 42, ../sass/screen.scss */
+.list .list-item:hover {
+  transition: 180ms background-color;
+  background-color: #c7ced1;
+  transition: 300ms background-color;
+}
+/* line 49, ../sass/screen.scss */
+.list .list-item.pressed {
+  height: 300px;
+  position: relative;
+  transition: 300ms height;
+  white-space: pre-line;
+  text-overflow: ellipsis;
+}
+/* line 59, ../sass/screen.scss */
+.list .list-item:first-child {
+  border-top: 1px solid #cccccc;
+}
+/* line 63, ../sass/screen.scss */
+.list .list-item:nth-child(even) {
+  background-color: 1px solid #e6e6e6;
+}

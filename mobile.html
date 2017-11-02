@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+
+  </head>
+  <body>
+    <h1>Hello world?</h1>
+    <div class="list">
+      <div class="list-item">
+        Ada satu yang bermain di sini
+      </div>
+      <div class="list-item">
+        Di sini juga ada
+
+      </div>
+      <div class="list-item">
+        Dan ada satu lagi biar rame sini juga ada
+
+      </div>
+      <div class="list-item">
+        Die in the air
+      </div>
+
+      <div class="list-item">
+        Dan ini adalah baris yang berisi lebih dari seharusnya dan seharusnya tidak ada?
+        plus ada <br> dan br juga
+      </div>
+
+      <div class="list-item">
+        Dan ini adalah baris yang berisi lebih dari seharusnya dan seharusnya tidak ada?
+        plus ada tapi ga ada br
+      </div>
+
+      <div class="list-item">
+        Ada satu yang bermain di sini
+      </div>
+      <div class="list-item">
+        Di sini juga ada
+
+      </div>
+      <div class="list-item">
+        Dan ada satu lagi biar rame sini juga ada
+
+      </div>
+      <div class="list-item">
+        Die in the air
+      </div>
+
+      <div class="list-item">
+        Dan ini adalah baris yang berisi lebih dari seharusnya dan seharusnya tidak ada?
+        plus ada <br> dan br juga
+      </div>
+
+      <div class="list-item">
+        Dan ini adalah baris yang berisi lebih dari seharusnya dan seharusnya tidak ada?
+        plus ada tapi ga ada br
+      </div>
+
+    </div>
+
+  <script>
+
+    document.querySelectorAll('.list-item').forEach( i => i.onclick = evt  => { 
+      document.querySelectorAll('.list-item').forEach( j => j.classList.remove('pressed')) 
+      var target = evt.currentTarget
+      target.classList.add('pressed') 
+      setTimeout( () => target.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'nearest'}), 300);
+    })
+
+
+  </script>
+
+  </body>
+</html>
